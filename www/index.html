@@ -33,20 +33,37 @@
         <link rel="stylesheet" href="css/kendo.dataviz.min.css" />
         <link rel="stylesheet" href="css/kendo.dataviz.default.min.css" />
         <link rel="stylesheet" href="css/kendo.mobile.all.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
         <link rel="stylesheet" href="css/style.css" />
 
 
-        <!-- jQuery -->
-        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <!--jQuery-->
+        <script src="js/jquery.js"></script>
+
+        <!--Angular JS-->
+        <script src="js/angular.js"></script>
+        <script src="js/angular-route.js"></script>
+
+        <!--Bootstrap-->
+        <script src="js/bootstrap.js"></script>
 
         <!--Kendo UI-->
         <script src="js/kendo.all.min.js"></script>
 
+        <!--Cordova-->
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/app.js"></script>
+
+        <!--Cordova script files-->
+        <script type="text/javascript" src="js/index.js"></script>
+
+        <!--Angular JS script files-->
+        <script src="js/app.js"></script>
+
+        <!--Angular JS controllers-->
+        <script src="js/controllers/homeController.js"></script>
     </head>
-    <body>
-        <div>
+    <body ng-app="myApp">
+        <div ng-controller="HomeCtrl" ng-init="init()">
             <h1>Cordova ScrollView</h1>
         </div>
         <div data-role="view">

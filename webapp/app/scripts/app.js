@@ -9,15 +9,23 @@
  * Main module of the application.
  */
 angular
-  .module('app', ['ngRoute'])
+  .module('webappApp', [
+    'ngAnimate',
+    'ngAria',
+    'ngCookies',
+    'ngResource',
+    'ngRoute',
+    'ngSanitize',
+    'ngTouch'
+  ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'templates/main.html',
+        templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
       .when('/about', {
-        templateUrl: 'templates/about.html',
+        templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
       .otherwise({

@@ -2,6 +2,7 @@
   <dictionary name="ira.levin">
     <words>
       <w>deviceready</w>
+      <w>toolset</w>
     </words>
   </dictionary>
 </component>
